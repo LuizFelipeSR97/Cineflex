@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ALL */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loading{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.loading img{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 200px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.header{
+    background-color: #C3CFD9;
+    color: #E8833A;
+    font-size: 34px;
+    font-weight: 400;
+    height: 67px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.content{
+    position: fixed;
+    left: 0;
+    top: 67px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.mainContent{
+    width: 390px;
+    height: 100%;
+    margin-bottom: 190px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+
+}
+
+.content .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.listaFilmes{
+    width: 330px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: auto;
+    margin-bottom: 77px
+}
+
+.content .fundoFilme{
+    height: 210px;
+    width: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.content .imagemFilme img{
+    height: 193px;
+    width: 129px;
+}
+
+.listaHorariosFilme{
+    width: 330px;
+    height: 100%;
+    margin-bottom: 188px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.datas{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.datas h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #293845;
+    width: 100%;
+}
+
+.horario{
+    display: flex;
+}
+
+.opcoesHorario{
+    background-color: #E8833A;
+    margin-right: 10px;
+    height: 45px;
+    width: 85px;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    height: 120px;
+    background-color: #DFE6ED;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer .center{
+    display: flex;
+    align-items: center;
+    width: 375px;
+    height: 100%;
+}
+
+.footer .fundoFilme{
+    height: 89px;
+    background-color: #FFFFFF;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 15px 0 10px;
+
+}
+
+.footer .imagemFilme img{
+    height: 72px;
+    width: 48px;
+}
+
+.footer .poster{
+    height: 100%;
+    width: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .titulo{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .titulo h1{
+    font-size: 24px;
+    font-weight: 400;
+    color: #293845;
+    margin: 0;
+}
+
+.assentos{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    margin-bottom: 15px;
+}
+
+.assentos .lugar{
+    margin: 3px;
+}
+
+.lugar{
+    font-size: 11px;
+    width: 25px;
+    height: 25px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+.legendaAssentos{
+    width: 375px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.legendaAssentos h1{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.assento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.legendaAssentos .assento{
+    cursor: default;
+}
+
+.selecionado{
+    /* background-color: #8DD7CF; */
+    background-color: red;
+    border-color: #1AAE9E;
+}
+
+.disponivel{
+    background-color: #C3CFD9;
+    border-color: #7B8B99;
+}
+
+.indisponivel{
+    background-color: #FBE192;
+    border-color: #F7C52B;
+}
+
+.botaoReservar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dadosComprador input{
+    width: 325px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.dadosComprador input::placeholder{
+    padding-left: 18px;
+    color: #AFAFAF;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dadosComprador h1{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+}
+
+.botao{
+    background-color: #E8833A;
+    color: #FFFFFF;
+    height: 40px;
+    width: 225px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+
+button{
+    background-color: #E8833A;
+    color: #FFFFFF;
+    border-color: #E8833A;
+    height: 40px;
+    width: 225px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* TELA SUCESSO NO PEDIDO */
+
+.tituloCentro{
+    width: 150px;
+    text-align: center;
+}
+
+.infoSessao{
+    width: 100%;
+    padding: 0 30px;
+}
+
+.infoAssentos{
+    width: 100%;
+    padding: 0 30px; 
+}
+
+.infoComprador{
+    width: 100%;
+    padding: 0 30px; 
+    margin-bottom: 40px;
+}
+
+.pagSucesso h1{
+    color: #293845;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.pagSucesso h2{
+    color: #293845;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.pagSucesso h3{
+    color: #247A6B;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.botao{
+    background-color: #E8833A;
+    color: #FFFFFF;
+    height: 40px;
+    width: 225px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-top: 40px;
+}
+
+/* HOME */
+
+/* MOVIE INFO */
+
+/* MOVIE SEATS */
+
+/* SUCCESS MOVIE PAYMENT */
